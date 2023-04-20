@@ -2,7 +2,9 @@ package com.example.leveled1.Bottomfragments;
 
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,10 +59,41 @@ public class homeFragment extends Fragment {
         }
     }
 
+    private CardView cardview_notes;
+    private CardView cardview_wallet ;  // private instance variables
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        cardview_notes = view.findViewById(R.id.cvnotes);
+        cardview_wallet = view.findViewById(R.id.cvwallet);
+
+        // for notes linking
+        cardview_notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment note_frag = new ToDoFragment();     //note_frag is the object of fragment, NotesFragment is the fragment
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.home_fragment_id, note_frag);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+
+        // for wallet/finance linking
+        cardview_wallet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment wallet_frag = new financeFragment();    //wallet_frag is the object of fragment, FinanceFragment is the fragment
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.home_fragment_id, wallet_frag);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+        return view;
     }
 }
