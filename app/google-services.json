@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896777207616",
+    "project_id": "leveled1",
+    "storage_bucket": "leveled1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896777207616:android:cf187737a6776f0e3ec4a5",
+        "android_client_info": {
+          "package_name": "com.example.leveled1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896777207616-5c0t4mcqf6mbm1nah6bcf3s4mmj6joce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYexkxaTxB92buOuY2j7u4hSRG6FKULVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896777207616-5c0t4mcqf6mbm1nah6bcf3s4mmj6joce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

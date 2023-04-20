@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_gradient"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".activities.LoginActivity1">
+
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/welcome1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/main_greet"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/greet_2"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inputlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmailS"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/enter_username"
+            android:textColorHint="#5D4037"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inputlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/PasswordS"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#6D4C41"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@style/Widget.Material3.CompoundButton.CheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/remember_me"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/mainLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_background"
+        android:text="@string/login_btn"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Continue with google"
+        android:background="@drawable/round_background"
+        android:drawableLeft="@drawable/cdnlogo_com_google_icon"
+        android:paddingHorizontal="20dp"
+        android:elevation="8dp" />
+
+    <TextView
+        android:id="@+id/LoginToSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Need an Account? Sign Up"
+        android:textAlignment="center"/>
+
+</LinearLayout>

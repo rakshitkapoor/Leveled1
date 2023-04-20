@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_gradient"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activities.signUpActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearlayoutS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/welcome1S"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Welcome!!"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome2S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/allura"
+        android:text="Let's Level Up"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inputlayout1S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNameS"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="First Name"
+            android:textColorHint="#5D4037"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inputlayout2S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmailS"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textColorHint="#5D4037"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inputlayout3S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/PasswordS"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:textColorHint="#6D4C41"
+            tools:ignore="TextContrastCheck"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/mainsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_background"
+        android:text="Sign Up"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/SignUpGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Continue with google"
+        android:background="@drawable/round_background"
+        android:drawableLeft="@drawable/cdnlogo_com_google_icon"
+        android:paddingHorizontal="20dp"
+        android:elevation="8dp" />
+
+    <TextView
+        android:id="@+id/SignupToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Have an Account? Login Now"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
