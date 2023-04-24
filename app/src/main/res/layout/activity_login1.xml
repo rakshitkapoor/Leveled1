@@ -8,7 +8,7 @@
     android:background="@drawable/theme_gradient"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".activities.LoginActivity1">
+    tools:context=".LoginActivity1">
 
     <LinearLayout
         android:id="@+id/Linearlayout2"

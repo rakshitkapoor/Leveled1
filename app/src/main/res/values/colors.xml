@@ -17,6 +17,8 @@
     <color name="todo_20">#33C9379D</color>
     <color name="finance_20">#33AE7E0F</color>
     <color name="profile_20">#335B37B7</color>
+    <color name="dark_blue">#192A56</color>
+    <color name="green_blue">#0A3D62</color>
 
 
 </resources>

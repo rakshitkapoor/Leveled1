@@ -1,4 +1,4 @@
-package com.example.leveled1.activities;
+package com.example.leveled1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,6 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
-import com.example.leveled1.R;
 
 public class MainActivity extends AppCompatActivity {
 
