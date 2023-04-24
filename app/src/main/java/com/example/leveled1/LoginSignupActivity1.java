@@ -1,4 +1,4 @@
-package com.example.leveled1.activities;
+package com.example.leveled1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-
-import com.example.leveled1.R;
 
 public class LoginSignupActivity1 extends AppCompatActivity {
 

@@ -7,7 +7,7 @@
     android:background="@drawable/theme_gradient"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".activities.signUpActivity">
+    tools:context=".signUpActivity">
 
     <LinearLayout
         android:id="@+id/LinearlayoutS"

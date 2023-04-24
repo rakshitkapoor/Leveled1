@@ -14,19 +14,25 @@
         android:theme="@style/Theme.Leveled1"
         tools:targetApi="31">
         <activity
-            android:name=".activities.Dashboard"
+            android:name=".profile"
             android:exported="false" />
         <activity
-            android:name=".activities.signUpActivity"
+            android:name=".todo_main"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginActivity1"
+            android:name=".Dashboard"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginSignupActivity1"
+            android:name=".signUpActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".LoginActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSignupActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
