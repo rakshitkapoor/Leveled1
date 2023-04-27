@@ -74,6 +74,7 @@
             android:id="@+id/cvwallet"
             android:layout_width="350dp"
             android:layout_height="100dp"
+            android:onClick="expense"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="20dp"
