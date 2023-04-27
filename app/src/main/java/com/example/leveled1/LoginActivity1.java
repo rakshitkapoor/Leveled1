@@ -95,6 +95,7 @@ public class LoginActivity1 extends AppCompatActivity {
                                     Toast.makeText(LoginActivity1.this, "Login Successful",
                                             Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+                                    intent.putExtra("email",email);
                                     startActivity(intent);
                                     finish();
                                 }
@@ -108,6 +109,7 @@ public class LoginActivity1 extends AppCompatActivity {
             }
         });
     }
+    int count;
 
     private void signIn(){
         Intent signInIntent=gsc.getSignInIntent();
@@ -129,8 +131,12 @@ public class LoginActivity1 extends AppCompatActivity {
     }
     void navigateToSecondActivity(){
 
-        Intent in=new Intent(LoginActivity1.this,Dashboard.class);
-        startActivity(in);
+        Intent in1=new Intent(LoginActivity1.this,Dashboard.class);
+        in1.putExtra("count",1);
+        startActivity(in1);
+
+        Intent in2=new Intent(LoginActivity1.this,profile.class);
+        in2.putExtra("count",1);
 
     }
 }
