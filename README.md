@@ -7,6 +7,14 @@ The App follows modern design patterns and has a minimalistic UI.
 
 ![Screenshot_20230724_162443_Leveled1](https://github.com/rakshitkapoor/Leveled1/assets/75168728/d3a988ee-20b6-4934-926b-ddd598e678d3)
 
+# Topics Used
+- RecyclerView
+  -Adapters
+- FireBase
+- Layouts
+- Interfaces
+  
+
 
   # Language Used
   - Java
