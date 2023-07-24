@@ -106,7 +106,7 @@
         android:id="@+id/LoginToSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:text="Need an Account? Sign Up"
         android:textAlignment="center"/>
 
